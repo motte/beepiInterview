@@ -318,7 +318,7 @@ body.centering-body {
 
 /* line 24, ../sass/partials/containers.scss */
 .flex-item, .flex-circle-item, .flex-check-item {
-  display: inline-block;
+  display: block;
   max-width: 250px;
   margin: 0 auto 0 auto;
   padding: 0 50px;
@@ -371,7 +371,12 @@ body.centering-body {
   margin: 0 auto 0 auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1060px) {
+  /* line 73, ../sass/partials/containers.scss */
+  .flex-item, .flex-circle-item, .flex-check-item {
+    display: inline-block;
+  }
+
   /* line 77, ../sass/partials/containers.scss */
   .oval-container {
     width: auto;
