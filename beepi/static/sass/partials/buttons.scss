@@ -1,0 +1,66 @@
+.left-toggle, .right-toggle {
+  background-color: $paletteSecondaryGreen;
+  border: 2px solid $paletteSecondaryGreen;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: $HeavyWeight;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 150px;
+}
+
+.left-toggle:focus, .right-toggle:focus {
+  outline: none;
+}
+
+.left-toggle {
+  @include border-radius(10px 0 0 10px);
+}
+
+.left-toggle:hover {
+  background-color: rgba(0,189,111,.9);
+}
+
+.right-toggle {
+  @include border-radius(0 10px 10px 0);
+}
+
+.left-toggle.inactive, .right-toggle.inactive {
+  background-color: transparent;
+}
+
+.left-toggle.inactive:hover, .right-toggle.inactive:hover {
+  background-color: rgba(0,0,0,.05);
+}
+
+.toggle-description {
+  box-sizing: border-box;
+  margin: 40px 0;
+  padding: 0 30px;
+  text-align: center;
+  div {
+    padding: 0 30px;
+  }
+}
+
+.toggle-description#moneyDesc {
+  display: none;
+  opacity: 0;
+}
+
+.outline-btn {
+  border: 2px solid #FFF;
+  @include border-radius(3px);
+  color: #FFF;
+  display: block;
+  font-weight: $HeavyWeight;
+  width: 200px;
+  margin: 10px auto 0 auto;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.outline-btn:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,207 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Beepi Interview Page</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'stylesheets/main.css' %}" />
+</head>
+<body class="centering-body">
+    <div
+		class="parallax-image-wrapper parallax-image-wrapper-100"
+		data-anchor-target="#dragons + .gap"
+		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-100"
+			style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})"
+			data-anchor-target="#dragons + .gap"
+			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+		></div>
+		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+	</div>
+
+	<div
+		class="parallax-image-wrapper parallax-image-wrapper-50"
+		data-anchor-target="#kittens + .gap"
+		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+		<div
+			class="parallax-image parallax-image-50"
+			style="background-image:url({% static 'img/PastedGraphic-2.tiff' %})"
+			data-anchor-target="#kittens + .gap"
+			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+		></div>
+	</div>
+
+    <div>
+        <section class="horizontal-section" id="dragons">
+            <h2 class="medium-weight-header"><span class="subtle-header">From there,</span> simplicity takes over...</h2>
+
+            <div class="flex-contain">
+                <figure class="flex-item">
+                    <img src="{% static 'img/PastedGraphic-8.png' %}" height="175" width="197" />
+                    <p class="oval-container">We'll send an inspector to get to know your car.</p>
+                </figure>
+
+                <figure class="flex-item">
+                    <img src="{% static 'img/PastedGraphic-7.png' %}" height="172" width="198" />
+                    <p class="oval-container">We'll quote you a great price that'll never change.</p>
+                </figure>
+
+                <figure class="flex-item">
+                    <img src="{% static 'img/PastedGraphic-6.png' %}" height="189" width="232" />
+                    <p class="oval-container">We'll find a buyer in 30-days or less.</p>
+                </figure>
+            </div>
+
+            <h2 class="medium-weight-header"><span class="subtle-header">Then, it's</span> time to say goodbye.</h2>
+
+            <div class="flex-contain">
+                <figure class="flex-item">
+                    <img src="{% static 'img/PastedGraphic-4.png' %}" height="179" width="209" />
+                    <p class="oval-container">We'll send an inspector to get to know your car.</p>
+                </figure>
+
+                <figure class="flex-item">
+                    <img src="{% static 'img/PastedGraphic-5.png' %}" height="122" width="297" />
+                    <p class="oval-container">We'll quote you a great price that'll never change.</p>
+                </figure>
+            </div>
+        </section>
+
+        <section class="horizontal-section dark-back gap" style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})">
+            <h2>
+                So, why sell with Beepi?<br />
+                A better experience in everyway.
+            </h2>
+
+            <button id="time" class="left-toggle">TIME</button><button id="money" class="right-toggle inactive">MONEY</button>
+
+            <p class="toggle-description" id="timeDesc">
+                The average private sale takes 2-months.
+                Beepi sales are guaranteed in 30-days from the date of inspection.
+            </p>
+            <p class="toggle-description" id="moneyDesc">
+                Beepi's magical pricing algorithm uses market data to ensure
+                Sellers get more, and Buyers pay less.
+            </p>
+        </section>
+
+        <section class="horizontal-section">
+            <h2>
+                Convenience at last
+            </h2>
+
+            <div class="flex-circle-item">
+                <img src="{% static 'img/PastedGraphic-1.png' %}" />
+                <h3 class="med-alt-header">Scheduling putting a wrench in your day?</h3>
+                <p>We'll meet you at a time and place convenient for you to inspect your car.</p>
+            </div>
+
+            <div class="flex-circle-item">
+                <img src="{% static 'img/PastedGraphic-2.png' %}" />
+                <h3 class="med-alt-header">Reinventing the paperwork wheel?</h3>
+                <p>Beepi takes care of all paperwork ensuring it gets filled out correctly.</p>
+            </div>
+
+            <div class="flex-circle-item">
+                <img src="{% static 'img/PastedGraphic-3.png' %}" />
+                <h3 class="med-alt-header">Worried about how you'll get around?</h3>
+                <p>Feel free to drive your car until the second we hand you a check</p>
+            </div>
+        </section>
+
+        <section class="horizontal-section dark-back gap" style="background-image:url({% static 'img/PastedGraphic-2 2.png' %});">
+            <h2>A truly safe transaction</h2>
+            <div class="flex-contain">
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        No more randos<br />
+                        <b>kicking tires.</b>
+                    </p>
+                </div>
+
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        A price that<br />
+                        <b>never changes.</b>
+                    </p>
+                </div>
+
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        When it's sold,<br />
+                        <b>it's sold.</b>
+                    </p>
+                </div>
+            </div>
+
+            <a class="outline-btn" href="">Sell my car for me Beepi!</a>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{% static '' %}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
+{#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>#}
+{#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>#}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // This is the parallax effect
+{#            skrollr.init({#}
+{#                smoothScrolling: false,#}
+{#                mobileDeceleration: 0.004#}
+{#            });#}
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#time').click(function(){
+                toggleTimeMoney(this);
+            });
+
+            $('#money').click(function(){
+                toggleTimeMoney(this);
+            });
+
+            function toggleTimeMoney(toggle){
+                if ($(toggle).hasClass('inactive') && toggle.id === 'time') {
+                    $(toggle).css({'background': 'rgba(0,189,111,1)'}).removeClass('inactive');
+                    $('#money').css({'background': 'transparent'}).addClass('inactive');
+                    $('#moneyDesc').animate({'opacity': 0},300);
+                    setTimeout(function(){
+                        $('#moneyDesc').hide();
+                        $('#timeDesc').show().animate({'opacity': 1},300);
+                    },300);
+                } else if ($(toggle).hasClass('inactive') && toggle.id === 'money'){
+                    $(toggle).css({'background': 'rgba(0,189,111,1)'}).removeClass('inactive');
+                    $('#time').css({'background': 'transparent'}).addClass('inactive');
+                    $('#timeDesc').show().animate({'opacity': 1},300);
+                    setTimeout(function(){
+                        $('#timeDesc').hide();
+                        $('#moneyDesc').show().animate({'opacity': 1},300);
+                    },300);
+
+                } else {
+                    return;
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>

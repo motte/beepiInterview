@@ -1,0 +1,31 @@
+// Force compass output
+/* Very important */
+//@import "compass/reset";
+
+// Modules and Variables
+/* Reserved for Sass code that doesn't actually output CSS
+This includes mixin declarations, functions, and variables */
+@import "core";
+
+// Partials
+/* Meat of the CSS constructed - SMACSS Style
+Breakdown into fine categories */
+@import "partials/reset";
+@import "partials/buttons";
+@import "partials/figures";
+@import "partials/typography";
+@import "partials/grids";
+@import "partials/forms";
+@import "partials/containers";
+
+
+// Third Party
+/* These are prepackaged components developed by others
+Generally create as Sass version and concatenated by adding import here
+Make sure to version these */
+//@import "vendor/initializr.boilerplate.responsive.2.13.14";
+
+
+// Pages
+/* Keep page specific styles */
+

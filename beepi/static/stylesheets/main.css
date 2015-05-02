@@ -1,0 +1,326 @@
+/* Very important */
+/* Reserved for Sass code that doesn't actually output CSS
+This includes mixin declarations, functions, and variables */
+/*******
+Core vars
+*******/
+/***
+Mixins
+***/
+/* line 85, ../sass/core.scss */
+body {
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 91, ../sass/core.scss */
+h1, h2, h3, h4, h5 {
+  color: #555;
+}
+
+/* Meat of the CSS constructed - SMACSS Style
+Breakdown into fine categories */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 9, ../sass/partials/reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 28, ../sass/partials/reset.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, ../sass/partials/reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 51, ../sass/partials/reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 63, ../sass/partials/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 80, ../sass/partials/reset.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 91, ../sass/partials/reset.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+/* line 104, ../sass/partials/reset.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/partials/buttons.scss */
+.left-toggle, .right-toggle {
+  background-color: #00BD6F;
+  border: 2px solid #00BD6F;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 150px;
+}
+
+/* line 13, ../sass/partials/buttons.scss */
+.left-toggle:focus, .right-toggle:focus {
+  outline: none;
+}
+
+/* line 17, ../sass/partials/buttons.scss */
+.left-toggle {
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* line 21, ../sass/partials/buttons.scss */
+.left-toggle:hover {
+  background-color: rgba(0, 189, 111, 0.9);
+}
+
+/* line 25, ../sass/partials/buttons.scss */
+.right-toggle {
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+/* line 29, ../sass/partials/buttons.scss */
+.left-toggle.inactive, .right-toggle.inactive {
+  background-color: transparent;
+}
+
+/* line 33, ../sass/partials/buttons.scss */
+.left-toggle.inactive:hover, .right-toggle.inactive:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 37, ../sass/partials/buttons.scss */
+.toggle-description {
+  box-sizing: border-box;
+  margin: 40px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+/* line 42, ../sass/partials/buttons.scss */
+.toggle-description div {
+  padding: 0 30px;
+}
+
+/* line 47, ../sass/partials/buttons.scss */
+.toggle-description#moneyDesc {
+  display: none;
+  opacity: 0;
+}
+
+/* line 52, ../sass/partials/buttons.scss */
+.outline-btn {
+  border: 2px solid #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  color: #FFF;
+  display: block;
+  font-weight: 700;
+  width: 200px;
+  margin: 10px auto 0 auto;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+/* line 64, ../sass/partials/buttons.scss */
+.outline-btn:hover {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/partials/typography.scss */
+.subtle-header {
+  font-weight: 300;
+}
+
+/* line 5, ../sass/partials/typography.scss */
+.medium-weight-header {
+  font-weight: 500;
+  margin: 40px 0 20px 0;
+}
+
+/* line 10, ../sass/partials/typography.scss */
+.heavy-weight {
+  font-weight: 700;
+}
+
+/* line 14, ../sass/partials/typography.scss */
+.med-alt-header {
+  color: #009BFF;
+  font-weight: 300;
+}
+
+/* line 1, ../sass/partials/containers.scss */
+body.centering-body {
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+/* line 7, ../sass/partials/containers.scss */
+.flex-container {
+  align-items: stretch;
+  align-content: space-between;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+/* line 24, ../sass/partials/containers.scss */
+.flex-item, .flex-circle-item, .flex-check-item {
+  display: inline-block;
+  max-width: 250px;
+  margin: 0 auto 0 auto;
+  padding: 0 50px;
+  text-align: center;
+}
+/* line 32, ../sass/partials/containers.scss */
+.flex-item img, .flex-circle-item img, .flex-check-item img {
+  margin: 30px 0;
+}
+
+/* line 37, ../sass/partials/containers.scss */
+.horizontal-section {
+  background-position: center;
+  background-size: cover;
+  color: #555;
+  font-weight: 300;
+  padding: 50px 0;
+}
+
+/* line 45, ../sass/partials/containers.scss */
+.horizontal-section.dark-back {
+  color: #FFF;
+  font-weight: 300;
+}
+/* line 49, ../sass/partials/containers.scss */
+.horizontal-section.dark-back h2 {
+  color: #FFF;
+}
+
+/* line 54, ../sass/partials/containers.scss */
+.oval-container {
+  border: 1px solid #AAA;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  height: 50px;
+  width: 80%;
+  line-height: 1.5;
+  margin: 0 auto 0 auto;
+  padding: 20px 35px;
+  vertical-align: middle;
+}
+
+/* line 65, ../sass/partials/containers.scss */
+.flex-check-item {
+  font-size: 20px;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 600px) {
+  /* line 75, ../sass/partials/containers.scss */
+  .oval-container {
+    width: auto;
+  }
+}
+/* These are prepackaged components developed by others
+Generally create as Sass version and concatenated by adding import here
+Make sure to version these */
+/* Keep page specific styles */

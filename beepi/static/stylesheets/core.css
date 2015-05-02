@@ -1,0 +1,17 @@
+/*******
+Core vars
+*******/
+/***
+Mixins
+***/
+/* line 85, ../sass/core.scss */
+body {
+  font-family: Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 91, ../sass/core.scss */
+h1, h2, h3, h4, h5 {
+  color: #555;
+}
