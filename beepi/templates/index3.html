@@ -12,7 +12,6 @@
 </head>
 <body class="centering-body">
 
-
         <section class="horizontal-section">
             <h2 class="medium-weight-header"><span class="subtle-header">From there,</span> simplicity takes over...</h2>
 
@@ -103,6 +102,7 @@
                 <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="14" id="svg_23" y="76" x="148" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#555555" fill="#555555">with your name on it.</text>
                 <path class="two-ellipse-svg" id="svg_25" d="m49.95979,3.0856l200.08034,0l0,0c26.21146,0 47.45987,19.43904 47.45987,43.41843c0,23.97133 -21.24841,43.41037 -47.45987,43.41037l-200.08034,0l0,0c-26.21109,0 -47.45979,-19.43904 -47.45979,-43.41037c0,-23.97939 21.2487,-43.41843 47.45979,-43.41843z" stroke-width="1" stroke="#009BFF" fill="none"/>
                 <path id="svg_26" d="m299.5,44.5c3,0 6,0 7,0c2,0 4,0 5,0c1,0 2,0 3,0c1,0 3,0 4,0c2,0 7,0 8,0c2,0 15,0 16,0c1,0 3,0 4,0c2,0 3,0 13,0c2,0 5,0 6,0c1,0 2,0 3,0c3,0 4,0 6,0c1,0 2,0 6,0c1,0 3,0 5,0c1,0 2,0 3,0c1,0 2,0 3,0c2,0 3,0 4,0c2,0 3,0 4,0l1,0" stroke-linecap="null" stroke-linejoin="null" stroke-width="1" stroke="#AAAAAA" fill="none"/>
+                <path id="svg_26" class="two-ellipse-svg" d="m299.5,44.5c3,0 6,0 7,0c2,0 4,0 5,0c1,0 2,0 3,0c1,0 3,0 4,0c2,0 7,0 8,0c2,0 15,0 16,0c1,0 3,0 4,0c2,0 3,0 13,0c2,0 5,0 6,0c1,0 2,0 3,0c3,0 4,0 6,0c1,0 2,0 6,0c1,0 3,0 5,0c1,0 2,0 3,0c1,0 2,0 3,0c2,0 3,0 4,0c2,0 3,0 4,0l1,0" stroke-linecap="null" stroke-linejoin="null" stroke-width="1" stroke="#009BFF" fill="none"/>
                 <path id="svg_27" d="m448.95978,3.0856l200.08038,0l0,0c26.21143,0 47.45984,19.43904 47.45984,43.41843c0,23.97133 -21.24841,43.41037 -47.45984,43.41037l-200.08038,0l0,0c-26.21109,0 -47.45978,-19.43904 -47.45978,-43.41037c0,-23.97939 21.24869,-43.41843 47.45978,-43.41843z" stroke-width="1" stroke="#AAAAAA" fill="none"/>
                 <text xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="14" id="svg_25" y="38" x="555" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#555555" fill="#555555">We'll pick your car up,</text>
                 <text font-weight="bold" xml:space="preserve" text-anchor="middle" font-family="Sans-serif" font-size="14" id="svg_26" y="62" x="555" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#555555" fill="#555555">and deliver it to its new home.</text>
@@ -200,11 +200,13 @@
 
     <!-- You can compress this into a separate file using yuglify or some other compressor -->
     <script type="text/javascript">
+        // initialize
+        drawLines(300, 2, $("path.three-ellipse-svg"));
 
         $(window).scroll(function() {
             drawLines(300, 2, $("path.three-ellipse-svg"));
 
-            drawLines(500, 1.5, $("path.two-ellipse-svg"));
+            drawLines(300, 1.5, $("path.two-ellipse-svg"));
         });
 
         function drawLines(offset, multiple, svg){
