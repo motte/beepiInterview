@@ -11,39 +11,9 @@
     <link rel="stylesheet" href="{% static 'stylesheets/main.css' %}" />
 </head>
 <body class="centering-body">
-    <div
-		class="parallax-image-wrapper parallax-image-wrapper-50"
-		data-anchor-target="#dragons + .gap"
-		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-		<div
-			class="parallax-image parallax-image-50"
-			style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})"
-			data-anchor-target="#dragons + .gap"
-			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-		></div>
-		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-	</div>
 
-	<div
-		class="parallax-image-wrapper parallax-image-wrapper-50"
-		data-anchor-target="#kittens + .gap"
-		data-bottom-top="transform:translate3d(0px, 300%, 0px)"
-		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-
-		<div
-			class="parallax-image parallax-image-50"
-			style="background-image:url({% static 'img/PastedGraphic-2 2.png' %})"
-			data-anchor-target="#kittens + .gap"
-			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
-			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
-		></div>
-	</div>
-
-    <div id="skrollr-body">
-        <section class="horizontal-section" id="dragons">
+        <section class="horizontal-section">
             <h2 class="medium-weight-header"><span class="subtle-header">From there,</span> simplicity takes over...</h2>
 
             <div class="flex-contain">
@@ -78,8 +48,10 @@
             </div>
         </section>
 
-        <div class="gap gap-50" style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})">
-            <section class="horizontal-section dark-back">
+{#        <div class="parallax">#}
+{#        <div class="parallax__group">#}
+            <div class="parallax__layer--back" style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})"></div>
+            <section class="horizontal-section dark-back" style="background: transparent">
                 <h2>
                     So, why sell with Beepi?<br />
                     A better experience in everyway.
@@ -96,9 +68,10 @@
                     Sellers get more, and Buyers pay less.
                 </p>
             </section>
-        </div>
+{#        </div>#}
+{#        </div>#}
 
-        <section class="horizontal-section" id="kittens">
+        <section class="horizontal-section">
             <h2>
                 Convenience at last
             </h2>
@@ -122,56 +95,50 @@
             </div>
         </section>
 
-        <div class="gap gap-100" style="background-image:url({% static 'img/PastedGraphic-2 2.png' %});">
-
-            <section class="horizontal-section dark-back">
-                <h2>A truly safe transaction</h2>
-                <div class="flex-contain">
-                    <div class="flex-check-item">
-                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                        <p>
-                            No more randos<br />
-                            <b>kicking tires.</b>
-                        </p>
-                    </div>
-
-                    <div class="flex-check-item">
-                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                        <p>
-                            A price that<br />
-                            <b>never changes.</b>
-                        </p>
-                    </div>
-
-                    <div class="flex-check-item">
-                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                        <p>
-                            When it's sold,<br />
-                            <b>it's sold.</b>
-                        </p>
-                    </div>
+        <section class="horizontal-section dark-back" style="background-image:url({% static 'img/PastedGraphic-2 2.png' %});">
+            <h2>A truly safe transaction</h2>
+            <div class="flex-contain">
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        No more randos<br />
+                        <b>kicking tires.</b>
+                    </p>
                 </div>
 
-                <a class="outline-btn" href="">Sell my car for me Beepi!</a>
-            </section>
-        </div>
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        A price that<br />
+                        <b>never changes.</b>
+                    </p>
+                </div>
 
-        <div class="content" id="done"></div>
-    </div>
+                <div class="flex-check-item">
+                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                    <p>
+                        When it's sold,<br />
+                        <b>it's sold.</b>
+                    </p>
+                </div>
+            </div>
+
+            <a class="outline-btn" href="">Sell my car for me Beepi!</a>
+        </section>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="{% static '' %}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
 {#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>#}
 {#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>#}
-
-    <script type="text/javascript">
-            // This is the parallax effect
-            skrollr.init({
-                smoothScrolling: false,
-                mobileDeceleration: 0.004
-            });
-    </script>
+{##}
+{#    <script type="text/javascript">#}
+{#            // This is the parallax effect#}
+{#            skrollr.init({#}
+{#                smoothScrolling: false,#}
+{#                mobileDeceleration: 0.004#}
+{#            });#}
+{#    </script>#}
 
     <script type="text/javascript">
         $(document).ready(function() {

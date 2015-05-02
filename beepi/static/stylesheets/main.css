@@ -127,6 +127,61 @@ body {
   padding: 0;
 }
 
+/* line 1, ../sass/partials/animations.scss */
+.parallax {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+
+/* line 12, ../sass/partials/animations.scss */
+.parallax__group {
+  position: relative;
+  height: 40vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* line 20, ../sass/partials/animations.scss */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin-x: 100%;
+  transform-origin-x: 100%;
+}
+
+/* line 30, ../sass/partials/animations.scss */
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+/* line 36, ../sass/partials/animations.scss */
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 3;
+}
+
+/* line 42, ../sass/partials/animations.scss */
+.parallax__layer--back {
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  top: 20%;
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: -1;
+}
+
 /* line 1, ../sass/partials/buttons.scss */
 .left-toggle, .right-toggle {
   background-color: #00BD6F;
@@ -276,24 +331,26 @@ body.centering-body {
 
 /* line 37, ../sass/partials/containers.scss */
 .horizontal-section {
-  background-position: center;
-  background-size: cover;
+  background-color: #FFF;
   color: #555;
+  display: block;
   font-weight: 300;
   padding: 50px 0;
+  position: relative;
+  z-index: 5000;
 }
 
-/* line 45, ../sass/partials/containers.scss */
+/* line 47, ../sass/partials/containers.scss */
 .horizontal-section.dark-back {
   color: #FFF;
   font-weight: 300;
 }
-/* line 49, ../sass/partials/containers.scss */
+/* line 51, ../sass/partials/containers.scss */
 .horizontal-section.dark-back h2 {
   color: #FFF;
 }
 
-/* line 54, ../sass/partials/containers.scss */
+/* line 56, ../sass/partials/containers.scss */
 .oval-container {
   border: 1px solid #AAA;
   -webkit-border-radius: 100px;
@@ -308,14 +365,14 @@ body.centering-body {
   vertical-align: middle;
 }
 
-/* line 65, ../sass/partials/containers.scss */
+/* line 67, ../sass/partials/containers.scss */
 .flex-check-item {
   font-size: 20px;
   margin: 0 auto 0 auto;
 }
 
 @media (min-width: 600px) {
-  /* line 75, ../sass/partials/containers.scss */
+  /* line 77, ../sass/partials/containers.scss */
   .oval-container {
     width: auto;
   }

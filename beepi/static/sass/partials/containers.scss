@@ -35,11 +35,13 @@ body.centering-body {
 }
 
 .horizontal-section {
-  background-position: center;
-  background-size: cover;
+  background-color: #FFF;
   color: $paletteDarkGray;
+  display:block;
   font-weight: $lightWeight;
   padding: 50px 0;
+  position: relative;
+  z-index: 5000;
 }
 
 .horizontal-section.dark-back {

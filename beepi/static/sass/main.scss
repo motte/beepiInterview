@@ -11,6 +11,7 @@ This includes mixin declarations, functions, and variables */
 /* Meat of the CSS constructed - SMACSS Style
 Breakdown into fine categories */
 @import "partials/reset";
+@import "partials/animations";
 @import "partials/buttons";
 @import "partials/figures";
 @import "partials/typography";
