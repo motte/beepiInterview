@@ -12,13 +12,13 @@
 </head>
 <body class="centering-body">
     <div
-		class="parallax-image-wrapper parallax-image-wrapper-100"
+		class="parallax-image-wrapper parallax-image-wrapper-50"
 		data-anchor-target="#dragons + .gap"
 		data-bottom-top="transform:translate3d(0px, 200%, 0px)"
 		data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
 		<div
-			class="parallax-image parallax-image-100"
+			class="parallax-image parallax-image-50"
 			style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})"
 			data-anchor-target="#dragons + .gap"
 			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
@@ -35,14 +35,14 @@
 
 		<div
 			class="parallax-image parallax-image-50"
-			style="background-image:url({% static 'img/PastedGraphic-2.tiff' %})"
+			style="background-image:url({% static 'img/PastedGraphic-2 2.png' %})"
 			data-anchor-target="#kittens + .gap"
 			data-bottom-top="transform: translate3d(0px, -60%, 0px);"
 			data-top-bottom="transform: translate3d(0px, 60%, 0px);"
 		></div>
 	</div>
 
-    <div>
+    <div id="skrollr-body">
         <section class="horizontal-section" id="dragons">
             <h2 class="medium-weight-header"><span class="subtle-header">From there,</span> simplicity takes over...</h2>
 
@@ -78,25 +78,27 @@
             </div>
         </section>
 
-        <section class="horizontal-section dark-back gap" style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})">
-            <h2>
-                So, why sell with Beepi?<br />
-                A better experience in everyway.
-            </h2>
+        <div class="gap gap-50" style="background-image:url({% static 'img/PastedGraphic-4 2.png' %})">
+            <section class="horizontal-section dark-back">
+                <h2>
+                    So, why sell with Beepi?<br />
+                    A better experience in everyway.
+                </h2>
 
-            <button id="time" class="left-toggle">TIME</button><button id="money" class="right-toggle inactive">MONEY</button>
+                <button id="time" class="left-toggle">TIME</button><button id="money" class="right-toggle inactive">MONEY</button>
 
-            <p class="toggle-description" id="timeDesc">
-                The average private sale takes 2-months.
-                Beepi sales are guaranteed in 30-days from the date of inspection.
-            </p>
-            <p class="toggle-description" id="moneyDesc">
-                Beepi's magical pricing algorithm uses market data to ensure
-                Sellers get more, and Buyers pay less.
-            </p>
-        </section>
+                <p class="toggle-description" id="timeDesc">
+                    The average private sale takes 2-months.
+                    Beepi sales are guaranteed in 30-days from the date of inspection.
+                </p>
+                <p class="toggle-description" id="moneyDesc">
+                    Beepi's magical pricing algorithm uses market data to ensure
+                    Sellers get more, and Buyers pay less.
+                </p>
+            </section>
+        </div>
 
-        <section class="horizontal-section">
+        <section class="horizontal-section" id="kittens">
             <h2>
                 Convenience at last
             </h2>
@@ -120,52 +122,55 @@
             </div>
         </section>
 
-        <section class="horizontal-section dark-back gap" style="background-image:url({% static 'img/PastedGraphic-2 2.png' %});">
-            <h2>A truly safe transaction</h2>
-            <div class="flex-contain">
-                <div class="flex-check-item">
-                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                    <p>
-                        No more randos<br />
-                        <b>kicking tires.</b>
-                    </p>
+        <div class="gap gap-100" style="background-image:url({% static 'img/PastedGraphic-2 2.png' %});">
+
+            <section class="horizontal-section dark-back">
+                <h2>A truly safe transaction</h2>
+                <div class="flex-contain">
+                    <div class="flex-check-item">
+                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                        <p>
+                            No more randos<br />
+                            <b>kicking tires.</b>
+                        </p>
+                    </div>
+
+                    <div class="flex-check-item">
+                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                        <p>
+                            A price that<br />
+                            <b>never changes.</b>
+                        </p>
+                    </div>
+
+                    <div class="flex-check-item">
+                        <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
+                        <p>
+                            When it's sold,<br />
+                            <b>it's sold.</b>
+                        </p>
+                    </div>
                 </div>
 
-                <div class="flex-check-item">
-                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                    <p>
-                        A price that<br />
-                        <b>never changes.</b>
-                    </p>
-                </div>
+                <a class="outline-btn" href="">Sell my car for me Beepi!</a>
+            </section>
+        </div>
 
-                <div class="flex-check-item">
-                    <img src="{% static 'img/PastedGraphic-1 2.png' %}" height="97" width="96" />
-                    <p>
-                        When it's sold,<br />
-                        <b>it's sold.</b>
-                    </p>
-                </div>
-            </div>
-
-            <a class="outline-btn" href="">Sell my car for me Beepi!</a>
-        </section>
+        <div class="content" id="done"></div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="{% static '' %}"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
 {#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>#}
 {#    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>#}
 
     <script type="text/javascript">
-        $(document).ready(function() {
             // This is the parallax effect
-{#            skrollr.init({#}
-{#                smoothScrolling: false,#}
-{#                mobileDeceleration: 0.004#}
-{#            });#}
-        });
+            skrollr.init({
+                smoothScrolling: false,
+                mobileDeceleration: 0.004
+            });
     </script>
 
     <script type="text/javascript">

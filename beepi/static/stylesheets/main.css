@@ -323,4 +323,125 @@ body.centering-body {
 /* These are prepackaged components developed by others
 Generally create as Sass version and concatenated by adding import here
 Make sure to version these */
+/* line 1, ../sass/vendor/skrollr-20150501.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../sass/vendor/skrollr-20150501.scss */
+.skrollr-desktop body {
+  height: 100% !important;
+}
+
+/* line 9, ../sass/vendor/skrollr-20150501.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 13, ../sass/vendor/skrollr-20150501.scss */
+p {
+  margin: 1em 0;
+}
+
+/* line 17, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image-wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 24, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image-wrapper-50 {
+  height: 50%;
+  top: -50%;
+}
+
+/* line 29, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image-wrapper-100 {
+  height: 100%;
+  top: -100%;
+}
+
+/* line 34, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 45, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image-50 {
+  height: 200%;
+  top: -50%;
+}
+
+/* line 50, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image-100 {
+  height: 100%;
+  top: 0;
+}
+
+/* line 55, ../sass/vendor/skrollr-20150501.scss */
+.parallax-image.skrollable-between {
+  display: block;
+}
+
+/* line 59, ../sass/vendor/skrollr-20150501.scss */
+.no-skrollr .parallax-image-wrapper {
+  display: none !important;
+}
+
+/* line 63, ../sass/vendor/skrollr-20150501.scss */
+#skrollr-body {
+  height: 100%;
+  overflow: visible;
+  position: relative;
+}
+
+/* line 69, ../sass/vendor/skrollr-20150501.scss */
+.gap {
+  background: transparent center no-repeat;
+  background-size: cover;
+}
+
+/* line 74, ../sass/vendor/skrollr-20150501.scss */
+.skrollr .gap {
+  background: transparent !important;
+}
+
+/* line 78, ../sass/vendor/skrollr-20150501.scss */
+.gap-50 {
+  height: 50%;
+}
+
+/* line 82, ../sass/vendor/skrollr-20150501.scss */
+.gap-100 {
+  height: 100%;
+}
+
+/* line 86, ../sass/vendor/skrollr-20150501.scss */
+.header, .content {
+  background: #fff;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 95, ../sass/vendor/skrollr-20150501.scss */
+.content-full {
+  height: 100%;
+}
+
+/* line 99, ../sass/vendor/skrollr-20150501.scss */
+#done {
+  height: 100%;
+}
+
 /* Keep page specific styles */
