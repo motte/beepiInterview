@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$paletteDarkGray".
-        on line 39 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss
+        on line 40 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss
 
-34:   }
-35: }
-36: 
-37: .horizontal-section {
-38:   background-color: #FFF;
-39:   color: $paletteDarkGray;
-40:   display:block;
-41:   font-weight: $lightWeight;
-42:   padding: 50px 0;
-43:   position: relative;
-44:   z-index: 5000;
+35:   }
+36: }
+37: 
+38: .horizontal-section {
+39:   background-color: #FFF;
+40:   color: $paletteDarkGray;
+41:   display:block;
+42:   font-weight: $lightWeight;
+43:   padding: 50px 0;
+44:   position: relative;
+45:   z-index: 5000;
 
 Backtrace:
-/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss:39
+/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss:40
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -70,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$paletteDarkGray\".\A         on line 39 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss\A \A 34:   }\A 35: }\A 36: \A 37: .horizontal-section {\A 38:   background-color: #FFF;\A 39:   color: $paletteDarkGray;\A 40:   display:block;\A 41:   font-weight: $lightWeight;\A 42:   padding: 50px 0;\A 43:   position: relative;\A 44:   z-index: 5000;"; }
+  content: "Error: Undefined variable: \"$paletteDarkGray\".\A         on line 40 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss\A \A 35:   }\A 36: }\A 37: \A 38: .horizontal-section {\A 39:   background-color: #FFF;\A 40:   color: $paletteDarkGray;\A 41:   display:block;\A 42:   font-weight: $lightWeight;\A 43:   padding: 50px 0;\A 44:   position: relative;\A 45:   z-index: 5000;"; }

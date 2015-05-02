@@ -36,18 +36,21 @@
 
 .toggle-description {
   box-sizing: border-box;
+  display: none;
   margin: 40px 0;
   padding: 0 30px;
   text-align: center;
   div {
     padding: 0 30px;
   }
+  @include animation(fade-out 400ms);
 }
 
-.toggle-description#moneyDesc {
-  display: none;
-  opacity: 0;
+.toggle-description.active {
+  display: block;
+  @include animation(fade-in 400ms);
 }
+
 
 .outline-btn {
   border: 2px solid #FFF;
