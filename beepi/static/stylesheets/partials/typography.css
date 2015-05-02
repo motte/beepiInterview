@@ -7,8 +7,8 @@ Error: Undefined variable: "$lightWeight".
 3: }
 4: 
 5: .medium-weight-header {
-6:   font-weight: $MedWeight;
-7:   margin: 40px 0 20px 0;
+6:   font-size: 30px;
+7:   font-weight: $MedWeight;
 
 Backtrace:
 /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/typography.scss:2
@@ -66,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$lightWeight\".\A         on line 2 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/typography.scss\A \A 1: .subtle-header {\A 2:   font-weight: $lightWeight;\A 3: }\A 4: \A 5: .medium-weight-header {\A 6:   font-weight: $MedWeight;\A 7:   margin: 40px 0 20px 0;"; }
+  content: "Error: Undefined variable: \"$lightWeight\".\A         on line 2 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/typography.scss\A \A 1: .subtle-header {\A 2:   font-weight: $lightWeight;\A 3: }\A 4: \A 5: .medium-weight-header {\A 6:   font-size: 30px;\A 7:   font-weight: $MedWeight;"; }

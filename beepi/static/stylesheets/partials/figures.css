@@ -1,0 +1,31 @@
+/* line 1, ../../sass/partials/figures.scss */
+.svg-single-ellipse {
+  display: block;
+}
+
+/* line 5, ../../sass/partials/figures.scss */
+.desktop-svg-two-ellipses {
+  display: none;
+}
+
+/* line 9, ../../sass/partials/figures.scss */
+.desktop-svg-three-ellipses {
+  display: none;
+}
+
+@media (min-width: 1060px) {
+  /* line 15, ../../sass/partials/figures.scss */
+  .svg-single-ellipse {
+    display: none;
+  }
+
+  /* line 19, ../../sass/partials/figures.scss */
+  .desktop-svg-two-ellipses {
+    display: inline-block;
+  }
+
+  /* line 23, ../../sass/partials/figures.scss */
+  .desktop-svg-three-ellipses {
+    display: inline-block;
+  }
+}

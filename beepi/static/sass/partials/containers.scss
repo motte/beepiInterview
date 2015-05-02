@@ -21,6 +21,14 @@ body.centering-body {
   text-align: center;
 }
 
+.flex-circle-contain {
+  margin-bottom: 20px;
+}
+
+.flex-check-contain {
+  margin: 40px 0 50px 0;
+}
+
 .flex-item, .flex-circle-item, .flex-check-item {
   display: block;
 //  flex-grow: 1;
@@ -71,11 +79,18 @@ body.centering-body {
 }
 
 @media (min-width: 1060px) {
-  .flex-item, .flex-circle-item, .flex-check-item {
+  .flex-item, .flex-check-item {
     display: inline-block;
+    padding: 0 70px;
+  }
+
+  .flex-circle-item {
+    display: inline-block;
+    padding: 0 50px;
   }
 
   .oval-container {
     width: auto;
   }
+
 }

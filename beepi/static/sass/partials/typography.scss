@@ -3,8 +3,13 @@
 }
 
 .medium-weight-header {
+  font-size: 30px;
   font-weight: $MedWeight;
-  margin: 40px 0 20px 0;
+  margin: 20px;
+}
+
+.medium-weight-header.spacing-50 {
+  margin-top: 50px;
 }
 
 .heavy-weight {
@@ -14,4 +19,30 @@
 .med-alt-header {
   color: $palettePrimaryBlue;
   font-weight: $lightWeight;
+}
+
+.bold-header {
+  font-family: $sanserifFont;
+  font-size: 30px;
+  font-weight: $HeavyWeight;
+}
+
+.med-header {
+  font-family: $sanserifFont;
+  font-size: 30px;
+  font-weight: $MedWeight;
+}
+
+@media (min-width: 1060px) {
+  .medium-weight-header {
+    font-size: 40px;
+  }
+
+  .bold-header {
+    font-size: 40px;
+  }
+
+  .med-header {
+    font-size: 40px
+  }
 }

@@ -5,5 +5,10 @@ from django.views.generic import TemplateView
 class IndexView(TemplateView):
     template_name = 'index.html'
 
-    def dispatch(self, request, *args, **kwargs):
-        return super(IndexView, self).dispatch(request, *args, **kwargs)
+
+class IndexTwoView(TemplateView):
+    template_name = 'index2.html'
+
+
+class IndexThreeView(TemplateView):
+    template_name = 'index3.html'
