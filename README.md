@@ -5,18 +5,18 @@ This page was created as a quick fun project for an interview.
 
 Fast Setup
 -------
-1. Install requirements
+I. Install requirements
 ```
 pip install -r requirements.txt
 ```
 * Ideally this command will be run in a virtualenv
 
-2. Run migrate
+II. Run migrate
 ```
 ./manage.py migrate
 ```
 
-3. Start dev server
+III. Start dev server
 ```
 ./manage.py runserver
 ```
