@@ -83,6 +83,18 @@ body.centering-body {
 }
 
 @media (min-width: 1060px) {
+  .flex-item.animate-left {
+    @include animation(1s bounce-in-left);
+  }
+
+  .flex-item.animate-down {
+    @include animation(1s bounce-in-down);
+  }
+
+  .flex-item.animate-right {
+    @include animation(1s bounce-in-right);
+  }
+
   .flex-item, .flex-check-item {
     display: inline-block;
     padding: 0 70px;

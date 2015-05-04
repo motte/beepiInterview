@@ -12,3 +12,7 @@ class IndexTwoView(TemplateView):
 
 class IndexThreeView(TemplateView):
     template_name = 'index2.html'
+
+
+class IndexFourView(TemplateView):
+    template_name = 'index-animations.html'
