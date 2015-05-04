@@ -44,11 +44,12 @@
   background-size: cover;
   width: 100%;
   height: 500px;
-  top:20%;
+  top:10%;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 //  -webkit-transform: translateZ(-300px) scale(2);
 //  transform: translateZ(-300px) scale(2);
+  -webkit-box-reflect: below;
   z-index: -1;
 }
 

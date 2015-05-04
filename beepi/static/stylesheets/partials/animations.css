@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'animation'.
-        on line 58 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss, in `animation'
-        from line 58 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss
+        on line 59 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss, in `animation'
+        from line 59 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss
 
-53: }
-54: 
-55: .parallax__layer--back.active {
-56:   display: block;
-57:   opacity: 1;
-58:   @include animation(fade-in 500ms);
-59: }
-60: 
-61: .parallax__layer--back.inactive {
-62:   display: none;
-63:   opacity: 0;
+54: }
+55: 
+56: .parallax__layer--back.active {
+57:   display: block;
+58:   opacity: 1;
+59:   @include animation(fade-in 500ms);
+60: }
+61: 
+62: .parallax__layer--back.inactive {
+63:   display: none;
+64:   opacity: 0;
 
 Backtrace:
-/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss:58:in `animation'
-/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss:58
+/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss:59:in `animation'
+/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss:59
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:98:in `block in with_mixin'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
@@ -74,4 +74,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'animation'.\A         on line 58 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss, in `animation'\A         from line 58 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss\A \A 53: }\A 54: \A 55: .parallax__layer--back.active {\A 56:   display: block;\A 57:   opacity: 1;\A 58:   @include animation(fade-in 500ms);\A 59: }\A 60: \A 61: .parallax__layer--back.inactive {\A 62:   display: none;\A 63:   opacity: 0;"; }
+  content: "Error: Undefined mixin 'animation'.\A         on line 59 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss, in `animation'\A         from line 59 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/animations.scss\A \A 54: }\A 55: \A 56: .parallax__layer--back.active {\A 57:   display: block;\A 58:   opacity: 1;\A 59:   @include animation(fade-in 500ms);\A 60: }\A 61: \A 62: .parallax__layer--back.inactive {\A 63:   display: none;\A 64:   opacity: 0;"; }

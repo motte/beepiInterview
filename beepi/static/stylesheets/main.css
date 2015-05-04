@@ -176,13 +176,14 @@ body {
   background-size: cover;
   width: 100%;
   height: 500px;
-  top: 20%;
+  top: 10%;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+  -webkit-box-reflect: below;
   z-index: -1;
 }
 
-/* line 55, ../sass/partials/animations.scss */
+/* line 56, ../sass/partials/animations.scss */
 .parallax__layer--back.active {
   display: block;
   opacity: 1;
@@ -193,7 +194,7 @@ body {
   animation: fade-in 500ms;
 }
 
-/* line 61, ../sass/partials/animations.scss */
+/* line 62, ../sass/partials/animations.scss */
 .parallax__layer--back.inactive {
   display: none;
   opacity: 0;
@@ -714,7 +715,7 @@ body {
     transform: none;
   }
 }
-/* line 190, ../sass/partials/animations.scss */
+/* line 191, ../sass/partials/animations.scss */
 .tada-animate {
   -webkit-animation: 1s tada;
   -moz-animation: 1s tada;
@@ -833,7 +834,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 221, ../sass/partials/animations.scss */
+/* line 222, ../sass/partials/animations.scss */
 .rotate-animate {
   -webkit-animation: 1s 300ms rotate-in;
   -moz-animation: 1s 300ms rotate-in;
@@ -922,7 +923,7 @@ body {
     opacity: 1;
   }
 }
-/* line 243, ../sass/partials/animations.scss */
+/* line 244, ../sass/partials/animations.scss */
 .ls-in {
   -webkit-animation: 1s 300ms ls-in;
   -moz-animation: 1s 300ms ls-in;
