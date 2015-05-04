@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$paletteDarkGray".
-        on line 48 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss
+        on line 52 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss
 
-43:   }
-44: }
-45: 
-46: .horizontal-section {
-47:   background-color: #FFF;
-48:   color: $paletteDarkGray;
-49:   display:block;
-50:   font-weight: $lightWeight;
-51:   padding: 50px 0;
-52:   position: relative;
-53:   z-index: 5000;
+47:   display: none;
+48: }
+49: 
+50: .horizontal-section {
+51:   background-color: #FFF;
+52:   color: $paletteDarkGray;
+53:   display:block;
+54:   font-weight: $lightWeight;
+55:   padding: 50px 0;
+56:   position: relative;
+57:   z-index: 5000;
 
 Backtrace:
-/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss:48
+/Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss:52
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/michael/.rbenv/versions/2.1.3/lib/ruby/gems/2.1.0/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -70,4 +70,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$paletteDarkGray\".\A         on line 48 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss\A \A 43:   }\A 44: }\A 45: \A 46: .horizontal-section {\A 47:   background-color: #FFF;\A 48:   color: $paletteDarkGray;\A 49:   display:block;\A 50:   font-weight: $lightWeight;\A 51:   padding: 50px 0;\A 52:   position: relative;\A 53:   z-index: 5000;"; }
+  content: "Error: Undefined variable: \"$paletteDarkGray\".\A         on line 52 of /Users/michael/Projects/beepiInterview/beepi/static/sass/partials/containers.scss\A \A 47:   display: none;\A 48: }\A 49: \A 50: .horizontal-section {\A 51:   background-color: #FFF;\A 52:   color: $paletteDarkGray;\A 53:   display:block;\A 54:   font-weight: $lightWeight;\A 55:   padding: 50px 0;\A 56:   position: relative;\A 57:   z-index: 5000;"; }

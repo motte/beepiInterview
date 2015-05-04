@@ -43,6 +43,10 @@ body.centering-body {
   }
 }
 
+.curly-svg {
+  display: none;
+}
+
 .horizontal-section {
   background-color: #FFF;
   color: $paletteDarkGray;
@@ -84,9 +88,18 @@ body.centering-body {
     padding: 0 70px;
   }
 
+  .flex-item.two-item-spacing {
+    margin: 0 70px;
+  }
+
   .flex-circle-item {
     display: inline-block;
     padding: 0 50px;
+  }
+
+  .curly-svg {
+    display: inline-block;
+    margin-bottom: -55px;
   }
 
   .oval-container {

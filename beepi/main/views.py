@@ -7,8 +7,8 @@ class IndexView(TemplateView):
 
 
 class IndexTwoView(TemplateView):
-    template_name = 'index2.html'
+    template_name = 'index3.html'
 
 
 class IndexThreeView(TemplateView):
-    template_name = 'index3.html'
+    template_name = 'index2.html'
