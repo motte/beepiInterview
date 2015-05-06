@@ -1,0 +1,5 @@
+/* line 1, ../../sass/partials/preload.scss */
+body.centering-body:after {
+  display: none;
+  content: url("../img/PastedGraphic-4 2png") url("../img/PastedGraphic-3 2.png");
+}
